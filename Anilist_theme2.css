@@ -195,7 +195,7 @@ Credit to @nutellaa & @kdy for css inspiration
   
   /* Custom CSS by @kdy */
   .page-content > .user {
-    background: url("Images/HinaBanner.png") center bottom / cover no-repeat fixed !important;
+    background: url() center bottom / cover no-repeat fixed !important;
     min-height: 100vh;
     padding-bottom: 25px;
   }
@@ -212,7 +212,7 @@ Credit to @nutellaa & @kdy for css inspiration
     margin: 0 !important;
   }
   #app > .wrap .footer {
-    background-image: url(https://tenor.com/es-419/view/hina-chono-blue-box-gif-939306282425403101);
+    background-image: url("Images/HinaBanner.png");
     background-position: 30px bottom;
     background-repeat: no-repeat;
     background-size: 140px;
