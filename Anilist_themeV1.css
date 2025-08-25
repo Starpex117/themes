@@ -213,9 +213,9 @@ Credit to @nutellaa & @kdy for css inspiration
   }
 #app > .wrap .footer {
   background-image: url("https://media1.tenor.com/m/DQkWFlNCRt0AAAAd/hina-chono-blue-box.gif");
-  background-position: 30px bottom;
+  background-position: left top;  
   background-repeat: no-repeat;
-  background-size: 140px;
+  background-size: 180px;  
 }
 
   #app .tooltip,
@@ -417,7 +417,7 @@ Credit to @nutellaa & @kdy for css inspiration
     right: 0 !important;
   }
   .user .overview .about {
-    background-image: url("https://media1.tenor.com/m/Q-y8TlS5IJkAAAAC/blue-box.gif");
+    background-image: url();
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 230px;
