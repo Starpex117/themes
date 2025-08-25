@@ -1,11 +1,5 @@
 /*
-    Hokaze Theme - Version 1.5.3
-        by https://anilist.co/user/Anzu/
-        at https://github.com/AnzuFTNW
 
-    Special Thanks
-        to https://anilist.co/user/cakes/
-        for pointing out a few things and the hover effect on the navbar
 */
 
 /* Settings */
@@ -47,7 +41,7 @@
   --hokaze-ab: 5px;   /* Avatar Border Thickness */
   --hokaze-ar: 255px;  /* Avatar Border Radius */
   --hokaze-at: all 1s ease-in-out; /* Avatar Hover Transition */
-  --hokaze-av: url("https://i.imgur.com/w6WVzJH.png"); /* Avatar Picture Link */
+  --hokaze-av: url("C:\Users\juand_uwbd7oj\Downloads\ImagesStuff\HinaPFP.jpg"); /* Avatar Picture Link */
   --hokaze-ah: 1.1; /* Avatar Hover Scale */
   
   /* Quick Maths - !DON'T TOUCH! */
@@ -103,7 +97,7 @@ Dark Theme
 /* Code */
 /* Body */
 body {
-    background-image: url("https://i.imgur.com/eoMtR7h.jpg");
+    background-image: url("C:\Users\juand_uwbd7oj\Downloads\ImagesStuff\HinaBanner.png");
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
