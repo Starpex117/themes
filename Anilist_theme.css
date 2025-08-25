@@ -41,7 +41,7 @@
   --hokaze-ab: 5px;   /* Avatar Border Thickness */
   --hokaze-ar: 255px;  /* Avatar Border Radius */
   --hokaze-at: all 1s ease-in-out; /* Avatar Hover Transition */
-  --hokaze-av: url("C:\Users\juand_uwbd7oj\Downloads\ImagesStuff\HinaPFP.jpg"); /* Avatar Picture Link */
+  --hokaze-av: url("Images/HinaPFP.jpg"); /* Avatar Picture Link */
   --hokaze-ah: 1.1; /* Avatar Hover Scale */
   
   /* Quick Maths - !DON'T TOUCH! */
@@ -97,7 +97,7 @@ Dark Theme
 /* Code */
 /* Body */
 body {
-    background-image: url("C:\Users\juand_uwbd7oj\Downloads\ImagesStuff\HinaBanner.png");
+    background-image: url("Images/HinaBanner.png");
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
