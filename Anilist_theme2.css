@@ -195,7 +195,7 @@ Credit to @nutellaa & @kdy for css inspiration
   
   /* Custom CSS by @kdy */
   .page-content > .user {
-    background: url() center bottom / cover no-repeat fixed !important;
+    background: url("Images/HinaBanner.png") center bottom / cover no-repeat fixed !important;
     min-height: 100vh;
     padding-bottom: 25px;
   }
