@@ -14,12 +14,12 @@
   --hokaze-br: 10px; /* Global Border Radius */
   --hokaze-pv: 30px; /* Vertical Content Padding */
   --hokaze-ph: 30px; /* Horizontal Content Padding */
-  --hokaze-bt: 0.3;  /* Content Background Transparency*/
+  --hokaze-bt: 1;  /* Content Background Transparency*/
   --hokaze-nr: 30px; /* Navbar Border Radius */
   --hokaze-nl: 80%;  /* Navbar Length */
   --hokaze-sb: 4px;  /* Scrollbar Width */
-  --hokaze-vo: 0.7;  /* Opacity For Various Elements */
-  --hokaze-vs: 0.975;  /* Scale For Various Elements */
+  --hokaze-vo: 1;  /* Opacity For Various Elements */
+  --hokaze-vs: 1;  /* Scale For Various Elements */
   --hokaze-vb: 2px;  /* Various Avatar Border Thickness */
   --hokaze-sr: 4px;  /* Social Page Border Thickness */
   --hokaze-fr: 30px; /* Footer Border Radius */
@@ -47,7 +47,7 @@
   --hokaze-ab: 5px;   /* Avatar Border Thickness */
   --hokaze-ar: 255px;  /* Avatar Border Radius */
   --hokaze-at: all 1s ease-in-out; /* Avatar Hover Transition */
-  --hokaze-av: url("Images/Siesta.jpg"); /* Avatar Picture Link */
+  --hokaze-av: url("Images/PfpNoBackground.png"); /* Avatar Picture Link */
   --hokaze-ah: 1.1; /* Avatar Hover Scale */
   
   /* Quick Maths - !DON'T TOUCH! */
@@ -103,7 +103,7 @@ Dark Theme
 /* Code */
 /* Body */
 body {
-    background-image: url("Images/HolySky.jpg");
+    background-image: url("Images/Banner.jpg");
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -111,12 +111,12 @@ body {
 }
 /* Header */
 #nav {
-  background: rgb(var(--color-foreground)) !important;
+  background: transparent !important;
   color: rgb(var(--color-text-light)) !important;
   border-radius: var(--hokaze-nbr);
   left: var(--hokaze-nbl);
   width: var(--hokaze-nl);
-  box-shadow: var(--hokaze-bs);
+  box-shadow: none;
 }
 .hide, .nav.nav-unscoped {
   top: -60px !important;
@@ -135,9 +135,6 @@ body {
     border-radius: var(--hokaze-lr);
     border: var(--hokaze-lob);
     transition: var(--hokaze-vt);
-}
-.logo > img:hover {
-    transform: scale(var(--hokaze-ls));
 }
 
 /* Banner */
@@ -207,7 +204,6 @@ body {
 }
 .banner-content:hover > .avatar {
   border-color: rgb(var(--color-blue));
-  transform: scale(var(--hokaze-ah));
 }
 .banner-content:hover > .actions {
   transform: translateX(183px);
@@ -219,7 +215,7 @@ body {
   max-width: var(--hokaze-maw);
   margin: 0 auto;
   border-radius: var(--hokaze-brt);
-  box-shadow: var(--hokaze-ns);
+  box-shadow: none;
   position: relative;
 }
 .nav > .link {
@@ -263,15 +259,7 @@ body {
   box-shadow: var(--hokaze-bs);
   transition: var(--hokaze-vt);
 }
-.history-day:hover {
-  transform: scale(1.2);
-}
-.list-stats:nth-child(1), .list-stats:nth-child(2) {
-  height: calc(121px - 45px);
-}
-.list-stats:nth-child(1):hover, .list-stats:nth-child(2):hover {
-  height: 121px;
-}
+
 .progress > .bar {
     background: linear-gradient(270deg,rgb(var(--hokaze-gs)),rgb(var(--hokaze-ge))) !important;
 }
@@ -283,23 +271,12 @@ body {
 .percentage {
   opacity: var(--hokaze-vo);
 }
-.genre > .name:hover, .percentage:hover, .favourite:hover {
-  opacity: 1;
-  transform: scale(1);
-}
 .overview .content-wrap {
   transform: scale(var(--hokaze-vs));
 }
-.overview .content-wrap:hover {
-  transform: scale(1);
-}
 .activity-entry > .wrap {
   transition: var(--hokaze-vt);
-  max-height: none /*70px*/;
-}
-.activity-entry:hover .wrap {
-  transform: scale(1.025); 
-  max-height: none /*663px*/; /*  663 560px max height, 28px margin, 70px header, 5px idk? kek */
+  max-height: none;
 }
 .wrap > .text {
   padding-top: 15px;
@@ -311,9 +288,6 @@ body {
   opacity: var(--hokaze-vo);
   transition: var(--hokaze-vt);
 }
-.wrap:hover .cover {
-  opacity: 1;
-}
 .header > .avatar, .users > .user {
   opacity: var(--hokaze-vo);
   transition: var(--hokaze-vt);
@@ -321,15 +295,10 @@ body {
   border: var(--hokaze-vab);
 }
 .wrap:hover .header > .avatar, .users > .user:hover, .reply:hover .header > .avatar {
-  opacity: 1;
   border-color: rgb(var(--color-blue));
 }
 .header > .name {
   transition: var(--hokaze-vt);
-}
-.wrap:hover .header > .name {
-  opacity: 1;
-  font-weight: bold;
 }
 .activity-entry, .input, svg:not(:root).svg-inline--fa {
   transition: var(--hokaze-vt);
@@ -338,36 +307,15 @@ body {
   opacity: var(--hokaze-vo);
   transition: var(--hokaze-vt);
 }
-.activity-manga_list:hover, .activity-anime_list:hover {
-  transform: scale(1.025);  
-}
-.activity-manga_list:hover .title, .activity-anime_list:hover .title {
-  opacity: 1;
-  font-weight: bold;
-}
-.input:hover {
-  transform: scale(var(--hokaze-rs));
-}
-.input:hover .el-textarea__inner {
-  opacity: 1;
-}
-svg:not(:root).svg-inline--fa:hover {
-  transform: scale(1.2);
-}
 .scroller > .load-more {
   margin-top: 0;
 }
 .scroller > .load-more:hover {
   color: rgb(var(--color-blue));
   box-shadow: var(--hokaze-bs);
-  transform: scale(var(--hokaze-rs));
 }
 .activity-replies > .reply {
   border-radius: var(--hokaze-br);
-}
-.reply:hover .header > .name {
-  opacity: 1;
-  font-weight: bold;
 }
 
 /* Content - Anime List / Manga List */
@@ -415,8 +363,6 @@ svg:not(:root).svg-inline--fa:hover {
   transition: var(--hokaze-vt);
 }
 .follow-card:hover, .follow-card > .avatar:hover {
-  opacity: 1;
-  transform: scale(1.1);
   border-color: rgb(var(--color-blue));
 }
 .follow-card > .name {
