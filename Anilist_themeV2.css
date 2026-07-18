@@ -103,7 +103,7 @@ Dark Theme
 /* Code */
 /* Body */
 body {
-    background-image: url("Images/yfuBackground.jpg");
+    background-image: url("Images/yfuBackground.png");
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -250,27 +250,14 @@ body {
   backdrop-filter: blur(var(--hokaze-bl));
 }
 
-/* Section Titles - auto colored from palette (Anime, Manga, Characters, Genre Overview, Activity History, About, Stats, Favorites, etc.) */
-.stats-wrap h2, .about h2, .desktop h2, .favourites-wrap h2, .content > .overview h2, .content > .overview h3,
-.type-container > .type-title, .genres > h2, .history > h2 {
-  color: rgb(var(--color-blue)) !important;
-}
-
 /* Content - Overview */
 .content > .overview {
   margin-top: 0;
 }
-.stats-wrap > .content-wrap, .about > .content-wrap, .desktop > .content-wrap, .favourites-wrap > .favourite, .scroller > .load-more, .user-page-unscoped .markdown-editor, .el-textarea__inner, .input {
+.stats-wrap > .content-wrap, .about > .content-wrap, .desktop > .content-wrap, .activity-entry > .wrap, .favourites-wrap > .favourite, .scroller > .load-more, .user-page-unscoped .markdown-editor, .el-textarea__inner, .input {
   border-radius: var(--hokaze-bra) !important;
   box-shadow: var(--hokaze-bs);
   transition: var(--hokaze-vt);
-}
-.activity-entry > .wrap {
-  border-radius: var(--hokaze-bra) !important;
-  box-shadow: var(--hokaze-bs);
-  transition: var(--hokaze-vt);
-  background: rgba(var(--color-background), 0.94) !important;
-  max-height: none;
 }
 
 .progress > .bar {
@@ -286,6 +273,10 @@ body {
 }
 .overview .content-wrap {
   transform: scale(var(--hokaze-vs));
+}
+.activity-entry > .wrap {
+  transition: var(--hokaze-vt);
+  max-height: none;
 }
 .wrap > .text {
   padding-top: 15px;
